@@ -78,17 +78,29 @@ img {
 }
 
 /*=============== THEME ===============*/
-.change-theme {
+.website-setting{
   position: absolute;
   top: 1.5rem;
   right: 0;
   font-size: 1.25rem;
-  color: var(--title-color);
   cursor: pointer;
   transition: .3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.change-theme:hover {
+.setting-item-theme {
+  margin-right: 0.5rem;
+}
+
+.setting-item {
+  color: var(--title-color);
+}
+.setting-item.ri-emphasis-cn:before{
+  content: "\ec99";
+} 
+.setting-item:hover {
   color: var(--first-color);
 }
 
@@ -169,7 +181,7 @@ body.dark-theme {
 }
 
 .profile__perfil img {
-  width: 75px;
+  width: 100%;
 }
 
 .profile__border {
@@ -494,7 +506,7 @@ body.dark-theme {
     margin-right: auto;
   }
 
-  .change-theme {
+  .setting-item {
     top: 2.5rem;
     right: 2.5rem;
   }
@@ -512,7 +524,7 @@ body.dark-theme {
     height: 120px;
   }
   .profile__perfil img {
-    width: 90px;
+    width: 100%;
   }
   .profile__profession {
     margin-bottom: 1.5rem;
