@@ -18,7 +18,7 @@ tabs.forEach((tab) => {
   })
 })
 
-/*=============== DARK LIGHT THEME AND LANGUAGE===============*/
+/*=============== DARK LIGHT THEME AND LANGUAGE(有bug)===============*/
 const themeButton = document.getElementById('theme-button')
 const langButton = document.getElementById('language-button')
 const themeSetting = {
@@ -27,7 +27,7 @@ const themeSetting = {
 }
 const langSetting = {
   en: { icon: 'ri-english-input', class: 'en' },
-  cn: { icon: 'ri-emphasis-cn', class: 'cn' },
+  cn: { icon: 'ri-emphasis-cn', class: 'zh-CN' },
 }
 const darkTheme = themeSetting['dark']['class']
 const darkIcon = themeSetting['dark']['icon']
@@ -69,12 +69,11 @@ if (selectedTheme) {
 }
 
 if (selectedLang === 'en') {
-  document.body.classList.remove(englishLang)
   langButton.classList.remove( englishIcon)
 }else{
-  document.body.classList.add(selectedLang)
   langButton.classList.add(selectedLangIcon)
 }
+document.documentElement.lang = selectedLang || 'zh-CN';
 
 themeButton.addEventListener('click', () => {
   document.body.classList.toggle(darkTheme)
@@ -84,11 +83,11 @@ themeButton.addEventListener('click', () => {
 })
 
 langButton.addEventListener('click', () => {
-  document.body.classList.toggle(englishLang)
   langButton.classList.toggle(englishIcon)
 
   sessionStorage.setItem('selected-lang', getCurrentLanguage())
   sessionStorage.setItem('selected-lang-icon', getCurrentLanguageIcon())
+  document.documentElement.lang = selectedLang || 'zh-CN'
 
 })
 
