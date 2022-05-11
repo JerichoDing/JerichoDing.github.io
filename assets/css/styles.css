@@ -78,7 +78,7 @@ img {
 }
 
 /*=============== THEME ===============*/
-.website-setting {
+.change-theme {
   position: absolute;
   top: 1.5rem;
   right: 0;
@@ -88,7 +88,7 @@ img {
   transition: .3s;
 }
 
-.website-setting:hover {
+.change-theme:hover {
   color: var(--first-color);
 }
 
@@ -494,7 +494,7 @@ body.dark-theme {
     margin-right: auto;
   }
 
-  .website-setting {
+  .change-theme {
     top: 2.5rem;
     right: 2.5rem;
   }
