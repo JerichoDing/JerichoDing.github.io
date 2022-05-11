@@ -50,5 +50,5 @@ app.use( async ( ctx ) => {
   ctx.body = html
 })
 
-app.listen(3000)
+app.listen(80)
 console.log('app is starting at port 3000')
