@@ -1,0 +1,27 @@
+{
+  "name": "JerichoDing.github.io",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JerichoDing/JerichoDing.github.io.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JerichoDing/JerichoDing.github.io/issues"
+  },
+  "homepage": "https://JerichoDing.github.io/JerichoDing.github.io",
+  "dependencies": {
+    "endskin": "^0.1.1",
+    "koa": "^2.13.4",
+    "koa-static": "^3.0.0",
+    "nodemon": "^2.0.16"
+  }
+}
